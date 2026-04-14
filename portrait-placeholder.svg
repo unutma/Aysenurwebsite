@@ -1,0 +1,9 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#0F0F0F"/>
+  <rect x="40" y="40" width="820" height="1020" rx="36" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+  <circle cx="450" cy="360" r="150" fill="#202020"/>
+  <path d="M234 860C234 709.661 355.885 587.776 506.224 587.776H507.776C658.115 587.776 780 709.661 780 860V868C780 878.493 771.493 887 761 887H253C242.507 887 234 878.493 234 868V860Z" fill="#1B1B1B"/>
+  <path d="M160 930C160 736.781 316.781 580 510 580C703.219 580 860 736.781 860 930V980C860 996.569 846.569 1010 830 1010H190C173.431 1010 160 996.569 160 980V930Z" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+  <text x="450" y="140" fill="#F5F5F5" font-family="Manrope, Arial, sans-serif" font-size="28" letter-spacing="8" text-anchor="middle">PORTRE ALANI</text>
+  <text x="450" y="180" fill="#9E9E9E" font-family="Manrope, Arial, sans-serif" font-size="20" letter-spacing="2" text-anchor="middle">Gercek fotograf eklendiginde otomatik degistirilebilir</text>
+</svg>
