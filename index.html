@@ -1,79 +1,152 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Av. Ayşenur Kamal | Avukat ve Arabulucu</title>
   <meta
     name="description"
-    content="Aile, gayrimenkul, insaat ve miras hukuku alanlarinda calisan Av. Aysenur Kamal icin tek sayfa tanitim sitesi."
-  >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    content="İstanbul Erenköy'de aile hukuku, gayrimenkul hukuku, miras hukuku ve arabuluculuk alanlarında hizmet veren Av. Ayşenur Kamal'ın resmi web sitesi."
+  />
+  <meta
+    name="keywords"
+    content="Ayşenur Kamal, avukat, arabulucu, aile hukuku, gayrimenkul hukuku, miras hukuku, İstanbul avukat, Erenköy avukat"
+  />
+  <meta name="author" content="Av. Ayşenur Kamal" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://unutma.github.io/Aysenurwebsite/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:title" content="Av. Ayşenur Kamal | Avukat ve Arabulucu" />
+  <meta
+    property="og:description"
+    content="İstanbul Erenköy'de aile hukuku, gayrimenkul hukuku, miras hukuku ve arabuluculuk alanlarında hukuki danışmanlık ve dava takibi."
+  />
+  <meta property="og:url" content="https://unutma.github.io/Aysenurwebsite/" />
+  <meta property="og:image" content="https://unutma.github.io/Aysenurwebsite/PHOTO-2026-04-09-14-57-28.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Av. Ayşenur Kamal | Avukat ve Arabulucu" />
+  <meta
+    name="twitter:description"
+    content="İstanbul Erenköy'de aile hukuku, gayrimenkul hukuku, miras hukuku ve arabuluculuk alanlarında hizmet."
+  />
+  <meta name="twitter:image" content="https://unutma.github.io/Aysenurwebsite/PHOTO-2026-04-09-14-57-28.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" type="image/svg+xml" href="portrait-placeholder.svg" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Av. Ayşenur Kamal",
+      "image": "https://unutma.github.io/Aysenurwebsite/PHOTO-2026-04-09-14-57-28.jpg",
+      "url": "https://unutma.github.io/Aysenurwebsite/",
+      "telephone": "+90-5XX-XXX-XX-XX",
+      "email": "info@example.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Erenköy",
+        "addressRegion": "İstanbul",
+        "addressCountry": "TR"
+      },
+      "areaServed": "İstanbul",
+      "priceRange": "$$",
+      "founder": "Av. Ayşenur Kamal"
+    }
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="#top" aria-label="Ana sayfa">
-        <span class="brand-seal">AK</span>
-        <span class="brand-copy">
+  <a class="skip-link" href="#main-content">Ana içeriğe geç</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Ana sayfa">
+        <span class="brand-mark">AK</span>
+        <span class="brand-text">
           <strong>Av. Ayşenur Kamal</strong>
-          <span>Avukat ve Arabulucu</span>
+          <small>Avukat ve Arabulucu</small>
         </span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        Menü
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Menüyü aç veya kapat"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
-        <a href="#about">Hakkımda</a>
-        <a href="#focus">Uzmanlık</a>
-        <a href="#approach">Yaklaşım</a>
-        <a href="#contact">İletişim</a>
+      <nav class="site-nav" id="siteNav" aria-label="Ana menü">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#uzmanlik">Uzmanlık</a>
+        <a href="#yaklasim">Yaklaşım</a>
+        <a href="#surec">Süreç</a>
+        <a href="#iletisim" class="nav-cta">İletişim</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main-content">
     <section class="hero">
-      <div class="container hero-layout">
-        <div class="hero-panel">
+      <div class="container hero-grid">
+        <div class="hero-content">
           <p class="eyebrow">İstanbul / Erenköy</p>
-          <h3>Aile, Gayrimenkul ve Arabulucuk.</h3>
-          <p class="hero-summary">
-            Akademik üretimi, dava pratiğini ve arabuluculuk deneyimini birlikte yürüten
-            Av. Ayşenur Kamal; müvekkilleri için açık iletişim, güçlü hazırlık ve ölçülü
-            strateji esasına dayalı hukuki hizmet sunar.
+          <h1>Aile, Gayrimenkul, Miras Hukuku ve Arabuluculuk</h1>
+          <p class="hero-text">
+            Akademik birikimi, dava pratiğini ve arabuluculuk deneyimini birlikte
+            yürüten Av. Ayşenur Kamal; müvekkilleri için açık iletişim, güçlü hazırlık
+            ve ölçülü strateji esasına dayalı hukuki hizmet sunar.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">İletişime Geç</a>
-            <a class="button button-secondary" href="#about">Detaylı Bilgi</a>
+            <a class="btn btn-primary" href="#iletisim">İletişime Geç</a>
+            <a class="btn btn-secondary" href="#hakkimda">Detaylı Bilgi</a>
           </div>
 
-          <div class="hero-stats">
-            <div>
-              <span>Serbest Avukatlık</span>
-              <strong>2024'dan beri</strong>
-            </div>
-            <div>
-              <span>Arabuluculuk</span>
-              <strong>2023'ten beri</strong>
-            </div>
-            <div>
-              <span>Çalışma Alanı</span>
+          <div class="hero-stats" aria-label="Öne çıkan bilgiler">
+            <article class="stat-card">
+              <strong>2020’den beri</strong>
+              <span>Serbest avukatlık pratiği</span>
+            </article>
+            <article class="stat-card">
+              <strong>2023’ten beri</strong>
+              <span>Arabuluculuk faaliyeti</span>
+            </article>
+            <article class="stat-card">
               <strong>Özel hukuk</strong>
-            </div>
+              <span>Yoğun çalışma alanı</span>
+            </article>
           </div>
         </div>
 
         <div class="hero-visual">
-          <img src="PHOTO-2026-04-09-14-57-28.jpg" alt="Av. Ayşenur Kamal portre fotoğrafı">
-          <div class="hero-card">
-            <p class="card-title">Çalışma Başlıkları</p>
+          <div class="portrait-frame">
+            <img
+              src="PHOTO-2026-04-09-14-57-28.jpg"
+              alt="Av. Ayşenur Kamal portre fotoğrafı"
+              loading="eager"
+            />
+          </div>
+
+          <aside class="focus-box">
+            <p class="focus-title">Çalışma Başlıkları</p>
             <ul>
               <li>Aile hukuku</li>
               <li>Gayrimenkul hukuku</li>
@@ -81,151 +154,270 @@
               <li>Miras hukuku</li>
               <li>Arabuluculuk</li>
             </ul>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="about section" id="about">
-      <div class="container section-intro">
-        <p class="eyebrow">Hakkımda</p>
-        <h3>Akademik Birikim ve Uygulama Deneyimi</h3>
-      </div>
-
-      <div class="container biography">
-        <div class="bio-main">
-          <p>
-            1994 yılında Ankara'da doğan Ayşenur Kamal, ilkokuldan liseye kadar İstanbul'da butik bir
-            kolejde eğitimini tamamladıktan sonra Marmara Üniversitesi Hukuk Fakültesi'nden 2016 yılında
-            mezun olmuştur. Avukatlık stajını İstanbul Barosu bünyesinde tamamlamış, ardından özel hukuk
-            alanında faaliyet gösteren çeşitli hukuk bürolarında çalışmıştır. 2020 yılından bu yana
-            serbest avukatlık yapmaktadır.
-          </p>
-          <p>
-            Uygulamadaki çalışma deneyiminin ardından akademik faaliyetlere yönelmiş; 2020 yılında İstanbul
-            Üniversitesi Özel Hukuk yüksek lisans programına başlamış ve banka sözleşmeleri, inşaat hukuku,
-            kentsel dönüşüm hukuku, medeni hukuk ve borçlar hukuku alanlarında ağırlıklı dersler almıştır.
-          </p>
-          <p>
-            Prof. Dr. Emrehan İnal danışmanlığında hazırladığı "Yapı Alacaklısının Kanuni İpotek Hakkı"
-            isimli yüksek lisans tezi 2024 yılında oybirliği ile kabul edilmiş, takip eden yıl Seçkin
-            Kitabevi tarafından yayımlanmıştır.
-          </p>
+    <section class="section" id="hakkimda">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Hakkımda</p>
+          <h2>Akademik Birikim ve Uygulama Deneyimi</h2>
         </div>
 
-        <div class="bio-side">
+        <div class="content-card prose">
           <p>
-            2023 yılında Arabuluculuk Daire Başkanlığı'na bağlı arabulucu olarak görev yapmaya başlamış;
-            500'den fazla tarafla görüşme sağlamış ve 200'den fazla dosyayı dava şartı arabuluculuk ile
-            tamamlamıştır. Taraflar arasında uzlaşma zemini kurmaya inanan yaklaşımıyla görevini
-            sürdürmektedir.
+            1994 yılında Ankara’da doğan Ayşenur Kamal, ilkokuldan liseye kadar
+            İstanbul’da butik bir kolejde eğitimini tamamladıktan sonra Marmara
+            Üniversitesi Hukuk Fakültesi’nden 2016 yılında mezun olmuştur.
+            Avukatlık stajını İstanbul Barosu bünyesinde tamamlamış, ardından
+            özel hukuk alanında faaliyet gösteren çeşitli hukuk bürolarında çalışmıştır.
+            2020 yılından bu yana serbest avukatlık yapmaktadır.
           </p>
+
           <p>
-            2025 yılında Marmara Üniversitesi Özel Hukuk Doktora programına başlamış; özellikle medeni
-            hukuk, aile hukuku ve gayrimenkul hukuku alanlarında doktora araştırmacısı olarak akademik
-            hayatına devam ederken Erenköy'deki ofisinde ekip arkadaşlarıyla birlikte müvekkillerinin
-            hukuki dava ve danışmanlık süreçlerini yürütmektedir.
+            Uygulamadaki çalışma deneyiminin ardından akademik faaliyetlere yönelmiş;
+            2020 yılında İstanbul Üniversitesi Özel Hukuk yüksek lisans programına
+            başlamış ve banka sözleşmeleri, inşaat hukuku, kentsel dönüşüm hukuku,
+            medeni hukuk ve borçlar hukuku alanlarında ağırlıklı dersler almıştır.
+          </p>
+
+          <p>
+            Prof. Dr. Emrehan İnal danışmanlığında hazırladığı
+            <em>“Yapı Alacaklısının Kanuni İpotek Hakkı”</em>
+            isimli yüksek lisans tezi 2024 yılında oybirliği ile kabul edilmiş,
+            takip eden yıl Seçkin Kitabevi tarafından yayımlanmıştır.
+          </p>
+
+          <p>
+            2023 yılında Arabuluculuk Daire Başkanlığı’na bağlı arabulucu olarak görev
+            yapmaya başlamış; 500’den fazla tarafla görüşme sağlamış ve 200’den fazla
+            dosyayı dava şartı arabuluculuk kapsamında tamamlamıştır.
+          </p>
+
+          <p>
+            2025 yılında Marmara Üniversitesi Özel Hukuk Doktora programına başlamış;
+            özellikle medeni hukuk, aile hukuku ve gayrimenkul hukuku alanlarında doktora
+            araştırmacısı olarak akademik hayatına devam ederken Erenköy’deki ofisinde
+            müvekkillerinin dava ve danışmanlık süreçlerini yürütmektedir.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="focus section" id="focus">
-      <div class="container section-intro">
-        <p class="eyebrow">Uzmanlık Alanları</p>
-        <h3>Özel hukukun dönüşüm gerektiren alanlarında yoğunlaşan çalışma yapısı.</h3>
-      </div>
+    <section class="section section-muted" id="uzmanlik">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="eyebrow">Uzmanlık Alanları</p>
+          <h2>Özel hukukun dönüşüm gerektiren alanlarında yoğunlaşan çalışma yapısı</h2>
+        </div>
 
-      <div class="container focus-list">
-        <article class="focus-item">
-          <span>01</span>
-          <div>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <span class="expertise-number">01</span>
             <h3>Aile Hukuku</h3>
-            <p>Boşanma, velayet, nafaka, mal rejimi ve ebeveynlik planlarının hukuki zeminde yapılandırılması.</p>
-          </div>
-        </article>
-        <article class="focus-item">
-          <span>02</span>
-          <div>
+            <p>
+              Boşanma, velayet, nafaka, mal rejimi ve ebeveynlik planlarının
+              hukuki zeminde yapılandırılması.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="expertise-number">02</span>
             <h3>Gayrimenkul ve İnşaat Hukuku</h3>
-            <p>Kat karşılığı inşaat, kentsel dönüşüm, taşınmaz uyuşmazlıkları ve yapı kaynaklı alacak süreçleri.</p>
-          </div>
-        </article>
-        <article class="focus-item">
-          <span>03</span>
-          <div>
+            <p>
+              Kat karşılığı inşaat, kentsel dönüşüm, taşınmaz uyuşmazlıkları ve
+              yapı kaynaklı alacak süreçleri.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="expertise-number">03</span>
             <h3>Miras Hukuku</h3>
-            <p>Miras paylaşımı, saklı pay, tereke yönetimi ve miras kaynaklı aile içi uyuşmazlıkların takibi.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+            <p>
+              Miras paylaşımı, saklı pay, tereke yönetimi ve miras kaynaklı
+              aile içi uyuşmazlıkların takibi.
+            </p>
+          </article>
 
-    <section class="approach section" id="approach">
-      <div class="container section-intro">
-        <p class="eyebrow">Yaklaşım</p>
-        <h3>Uyuşmazlıkları yalnızca bir dava dosyası olarak değil, yeniden kurulan yaşam düzeninin parçası olarak ele alıyoruz.</h3>
-      </div>
-
-      <div class="container approach-grid">
-        <div class="approach-block">
-          <p>
-            Aile, gayrimenkul ve miras hukuku alanı çoğu zaman bir ayrılık alanı olarak görülse de
-            aslında hayatın karmaşık dönüşüm süreçlerinden biridir. Bu çalışma yaklaşımı, aşamaları
-            yalnızca hukuki bir süreç olarak değil; tarafların, çocukların ve yaşam düzeninin yeniden
-            yapılandırıldığı bir geçiş alanı olarak görür.
-          </p>
-          <p>
-            Ebeveynlik planları, maddi ve hukuki dengenin yeniden kurulması, taraflar arasındaki
-            çatışmayı derinleştirmek değil, kontrol altına almak ve yönetilebilir bir sisteme
-            dönüştürmektir.
-          </p>
-        </div>
-
-        <div class="approach-block">
-          <p>
-            Klasik hukuk mantığında çoğu zaman haklı-haksız ayrımı üzerinden ilerlemek yerine, temel
-            soru şudur: Bu süreç herkes için en adil ve sürdürülebilir şekilde nasıl kurulabilir?
-          </p>
-          <p>
-            Doğru tasfiye; yapının kontrollü biçimde sökülmesi ve geride yaşanabilir bir alan
-            bırakılmasıdır. Bu rehberlik, henüz bunu deneyimlememiş olanlar için bir öngörü alanı,
-            sürecin içinde olanlar için bir harita, süreci geride bırakmış olanlar için ise yaşananların
-            neden böyle olduğuna dair açıklayıcı bir çerçeve sunar.
-          </p>
-          <p>
-            Hukuki faaliyetlerinin yanında aile, kadın ve çocuklarla ilgili çeşitli derneklerde de
-            aktif olarak yer almaktadır.
-          </p>
+          <article class="expertise-card">
+            <span class="expertise-number">04</span>
+            <h3>Arabuluculuk</h3>
+            <p>
+              Uyuşmazlıkların kontrollü, iletişimi koruyan ve taraflar için
+              sürdürülebilir bir zeminde ele alınması.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="contact section" id="contact">
-      <div class="container contact-shell">
-        <div class="contact-copy">
+    <section class="section" id="yaklasim">
+      <div class="container narrow">
+        <div class="section-heading center">
+          <p class="eyebrow">Yaklaşım</p>
+          <h2>Uyuşmazlıkları yalnızca bir dava dosyası olarak değil, yaşam düzeninin parçası olarak ele alıyoruz</h2>
+        </div>
+
+        <div class="content-card prose">
+          <p>
+            Aile, gayrimenkul ve miras hukuku alanı çoğu zaman yalnızca bir ayrılık ya da
+            çekişme zemini olarak görülse de, gerçekte hayatın yeniden kurulduğu kritik
+            geçiş dönemlerinden biridir. Bu nedenle hukuki süreç; yalnızca hak ve yükümlülüklerin
+            teknik takibi değil, aynı zamanda yaşam düzeninin dengeli şekilde yeniden kurulmasıdır.
+          </p>
+          <p>
+            Çalışma yaklaşımımız; çatışmayı büyütmek yerine yönetilebilir hale getirmeyi,
+            müvekkilin hukuki konumunu netleştirmeyi ve süreci olabildiğince öngörülebilir
+            bir yapıda ilerletmeyi hedefler.
+          </p>
+        </div>
+
+        <div class="approach-grid">
+          <article class="mini-card">
+            <h3>Açık iletişim</h3>
+            <p>Sürecin her aşamasında net, anlaşılır ve düzenli bilgilendirme.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Güçlü hazırlık</h3>
+            <p>Dosya yapısına uygun belge, strateji ve hukuki çerçevenin titizlikle kurulması.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Ölçülü strateji</h3>
+            <p>Gereksiz çatışmayı büyütmeden, sonuç odaklı ve sürdürülebilir bir yaklaşım.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="surec">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="eyebrow">Çalışma Süreci</p>
+          <h2>İlk temas sonrası izlenen temel çerçeve</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <span>01</span>
+            <h3>Ön değerlendirme</h3>
+            <p>Uyuşmazlığın kapsamı, mevcut belgeler ve hukuki çerçeve ilk aşamada değerlendirilir.</p>
+          </article>
+          <article class="process-card">
+            <span>02</span>
+            <h3>Strateji belirleme</h3>
+            <p>Dava, danışmanlık veya arabuluculuk ekseninde en uygun yol haritası oluşturulur.</p>
+          </article>
+          <article class="process-card">
+            <span>03</span>
+            <h3>Takip ve iletişim</h3>
+            <p>Süreç boyunca düzenli bilgilendirme yapılarak dosya kontrollü şekilde ilerletilir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container narrow">
+        <div class="section-heading center">
+          <p class="eyebrow">Sık Sorulanlar</p>
+          <h2>İlk temas öncesinde en çok merak edilen başlıklar</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Hangi alanlarda hizmet verilmektedir?</summary>
+            <p>
+              Aile hukuku, gayrimenkul ve inşaat hukuku, miras hukuku ile
+              arabuluculuk alanlarında danışmanlık ve dava takibi yürütülmektedir.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>İlk görüşmede neler değerlendirilir?</summary>
+            <p>
+              Uyuşmazlığın temel çerçevesi, mevcut belgeler, olası hukuki yollar ve
+              sürecin genel yapısı değerlendirilir.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Arabuluculuk hangi durumlarda uygundur?</summary>
+            <p>
+              Taraflar arasında uzlaşma zemini kurulabilecek ve kontrollü iletişimin
+              korunabildiği pek çok uyuşmazlıkta arabuluculuk etkili bir yöntem olabilir.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="iletisim">
+      <div class="container contact-grid">
+        <div>
           <p class="eyebrow">İletişim</p>
-          <h3>Dosyanızı görüşmek için iletişime geçin.</h3>
-          <p>
-            İlk görüşme ve danışmanlık süreçleri için iletişim kanallarını kullanabilirsiniz.
+          <h2>Hukuki danışmanlık ve dava süreçleri için iletişime geçin</h2>
+          <p class="contact-text">
+            Ofis konumu, çalışma alanları ve ilk görüşme süreci hakkında bilgi almak için
+            aşağıdaki kanallar üzerinden iletişim kurulabilir.
           </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="tel:+905000000000">Telefonla Ara</a>
+            <a class="btn btn-secondary" href="mailto:info@example.com">E-posta Gönder</a>
+          </div>
         </div>
 
-        <div class="contact-panel">
-          <div class="contact-row">
-            <span>Adres</span>
-            <p>Erenköy, Kadıköy / İstanbul</p>
+        <div class="contact-card">
+          <div class="contact-item">
+            <span>Konum</span>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+              Erenköy / İstanbul
+            </a>
           </div>
-          <div class="contact-row">
+
+          <div class="contact-item">
+            <span>Telefon</span>
+            <a href="tel:+905000000000">+90 500 000 00 00</a>
+          </div>
+
+          <div class="contact-item">
             <span>E-posta</span>
-            <a href="mailto:aysenurkamal@gmail.com">aysenurkamal@gmail.com</a>
+            <a href="mailto:info@example.com">info@example.com</a>
           </div>
-          <div class="contact-row">
-            <span>Sosyal Medya</span>
-            <div class="social-links">
-              <a href="https://www.instagram.com/av.aysenurkamal" style="--hover-color: #4c8bf5;">Instagram</a>
-              <a href="https://tr.linkedin.com/in/ayşenur-kamal-51a56a2ba" style="--hover-color: #0a66c2;">LinkedIn</a>
-            </div>
+
+          <div class="contact-item">
+            <span>WhatsApp</span>
+            <a
+              href="https://wa.me/905000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mesaj Gönder
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <span>LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Profili Görüntüle
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <span>Instagram</span>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hesabı Görüntüle
+            </a>
           </div>
         </div>
       </div>
@@ -233,9 +425,18 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-row">
-      <p>Av. Ayşenur Kamal</p>
-      <p>Avukatlık, danışmanlık ve arabuluculuk hizmeti.</p>
+    <div class="container footer-inner">
+      <div>
+        <strong>Av. Ayşenur Kamal</strong>
+        <p>Avukat ve Arabulucu</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#uzmanlik">Uzmanlık</a>
+        <a href="#yaklasim">Yaklaşım</a>
+        <a href="#iletisim">İletişim</a>
+      </div>
     </div>
   </footer>
 
